@@ -1,0 +1,182 @@
+body{
+	margin: 0;
+}
+
+.header{
+	width: 100%;
+	background: url(img/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	min-height: 100%;
+	text-align: center;
+	color: white;
+	position: relative;
+	/*border: 2px solid red;*/
+}
+
+.header_content{
+	/*border: 2px solid green;*/
+	margin-top: 40%;
+	transform: translateY(-40%);
+}
+
+.header_content h1, .need_section h1{
+	margin-bottom: 50px;
+}
+
+.header_content p, .need_section p{
+	margin-bottom: 40px;
+}
+
+.header_content button, .need_section button{
+	border: none;
+	padding: 10px 15px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.btn_coral{
+	background: #f05f40;
+}
+.btn_white{
+	background: white;
+	color: black;
+}
+
+.need_section{
+	width: 100%;
+	background: #f05f40;
+	text-align: center;
+	color: white;
+	padding: 80px 0;
+}
+
+.service{
+	width: 100%;
+	padding: 80px 0;
+	text-align: center;
+}
+
+.service  h3{
+	/*border: 2px solid red;*/
+	margin-bottom: 40px;
+}
+
+.service_content h3{
+	margin-bottom: 5px;
+}
+
+.service_content i{
+	color: #f05f40;
+}
+
+.no_gutter{
+	margin-left: 0;
+	margin-right: 0;
+	/*overflow: hidden;*/
+	/*transition: all 2s;*/
+}
+
+.no_gutter div{
+	overflow: hidden;
+	transition: all 2s;
+}
+
+.no_gutter [class^="col-"], .no_padding{
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(240, 95, 64, 0.7);
+	z-index: 100;
+	color: white;
+	text-align: center;
+	display: none;
+}
+.overlay span{
+	display: block;
+}
+
+.overlay h3{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.no_gutter div:hover .overlay{
+	display: block;
+	cursor: pointer;
+}
+
+.no_gutter div:hover img{
+	transform: scale(1.2);
+}
+
+/*bootstrap customization*/
+.navbar-default {
+    background-color: transparent;
+    border-color: #7b7474;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+/*end*/
+
+/*media query*/
+@media (max-width: 767px) { 
+
+	.header{
+		height: auto;
+	}
+
+	.header_content {
+	    /* border: 2px solid green; */
+	    margin-top: 90%;
+	    transform: translateY(-40%);
+	}
+
+	.header_content h1 {
+	    font-size: 15px;
+	    margin-bottom: 50px;
+	}
+
+	.header_content p{
+		font-size: 12px;
+	}
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
